@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Marni Halasa | City Council</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel= "stylesheet" href = "style.css">
+</head>
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    // When the event DOMContentLoaded occurs, it is safe to access the DOM
+
+        // When the user scrolls the page, execute myFunction 
+        window.addEventListener('scroll', myFunction);
+
+        // Get the navbar
+        var navbar = document.getElementById("navBar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop + (window.innerHeight/50);
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if(window.pageYOffset >= sticky) {
+                //navbar.classList.add("sticky");
+                navbar.style.position = "fixed";
+                navbar.style.top = "0px";
+                navbar.style.margin = "0px";
+                console.log("added sticky");
+            } else {
+                //navbar.classList.remove("sticky");
+                navbar.style.position = "relative";
+                navbar.style.top = "0px";
+                navbar.style.marginTop = "-5px";
+                console.log("removed sticky");
+            }
+        }
+    })
+    
+    function goAsk(){
+        window.scrollTo(0,0);
+
+        var askDonate = document.getElementById("askForDonations");
+        askDonate.style.visibility = "visible";
+        askDonate.style.webkitAnimation = "goAsk 2s";
+        askDonate.style.height = "450px";
+    }
+
+</script>
+<body>
+    <img id = "banner">
+    <div id = "askForDonations" style = "visibility: hidden; height: 0px;">
+        <div id = "leftcontainerD">
+            <h1>Our People Funded Campaign Needs Your Help</h1>
+            If you believe there needs to be major change to restore democracy at City Hall, come join us! 
+            We are a completely citizen-powered grassroots campaign with no money from real estate or special interests. 
+            As a real voice for ordinary people — who are too often voiceless.<br><br>
+
+            Qualifying for matching funds will give us an 8 to 1 match. So your $10 donation becomes $90.
+            Your $25 donation becomes $225. Your $100 becomes $900. And your $175 becomes $1,575, so every 
+            donation matters! Thank you!<br><br>
+
+            <h3>Can't Donate? <a href = "" style = "text-decoration: underline;">Become a volunteer!</a></h3>
+        </div>
+        <div id = "rightcontainerD">
+            <a href = "" class = "manyDonateButtons">DONATE $10</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">DONATE $25</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">DONATE $50</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">DONATE $100</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">NO, THANKS</a><br><br><br>
+        </div>
+    </div>
+    <div id = "navBar">
+        <a href = "index.html"><li class = "navLink">HOME</li></a>
+        <a href = "about.html"><li class = "navLink">ABOUT</li></a>
+        <a href = "press.html"><li class = "navLink">NEWS</li></a> <!-- BLOG AND PRESS-->
+        <a href = ""><li class = "navLink">ISSUES</li></a>
+        <a href = ""><li class = "navLink">TALK</li></a>
+        <button onclick="goAsk()" id = "donate"><b>DONATE</b></button>
+    </div>
+    <img src = "images/MarniMegaphone.jpg" style = "width: calc(100% - 1px);">
+    <div class = "aboutPage" style = "font-size: 18px; text-align: left; background-color: #f0f0f0;">
+        <h1>AS PROTESTS HIT DAY 10 IN NYC, WHATS BEEN ACCOMPLISHED?</h1>
+        <h3>PIX 11 NEWS</h3>
+        More than 2,000 demonstrators have been arrested or given summonses but several district attorneys in Manhattan, 
+        Brooklyn and the Bronx say they will not prosecute those arrested and accused of low level offenses like unlawful 
+        assembly or violating the curfew.
+        <br><br>
+        For demonstrator Emil Gee, these marches opened his eyes to injustice:
+        “Until this happened, I didn’t engage in a conversation about Black Lives Matter,” Gee said. “How some people who don’t 
+        have the privileges and need to get them,” he added.
+        <br><br>
+        Many demonstrating were struck by the diversity of the thousands in the crowd.
+        <br><br>
+        “It’s multi generational and I think the main thing it’s not just protesting police brutality, but it’s also economic 
+        injustice, the ability to have affordable housing,” said Marni Halasa. “It’s a convergence of crises and people want change."
+        <br><br>
+        And to many in the crowd, this is just the beginning of a whole new movement.
+        <br><br>
+        <a href = "https://www.pix11.com/news/local-news/as-protests-hit-day-10-in-nyc-whats-been-accomplished" class = "readmore"><b>READ MORE</b></a>
+        <br><br>
+        <br><br>
+        <h1>NEW YORK'S UNEMPLOYMENT SYSTEM OVERWHELMED AS CORONAVIRUS PANDEMIC SHUTTERS BUSINESSESS ACROSS THE STATE</h1>
+        <h3>NEW YORK DAILY NEWS</h3>
+        “I’ve called all the toll-free numbers, which are recordings that redirect you to a main menu or a message saying that all the operators 
+        are overloaded now and to call back,” said Lee. “Can’t reach a human to help.”
+        <br><br>
+        David Stollings, a sound engineer at a now-shuttered Broadway theater, called the situation “a doozy.”
+        <br><br>
+        “I got the site to load once,” said Stollings. “Before this it was just not loading at all.”
+        <br><br>
+        Marnia Halasa, a Manhattan-based figure skating coach, said she was also unable to apply and became worried about paying rent.
+        <br><br>
+        “What if I have to blow the New York popsicle joint and run back to Ohio to live with my father?,” asked Halasa, 
+        who’s lived in the city for 28 years.
+        <br><br>
+        It’s not clear how many New Yorkers will be left unemployed due to the pandemic — but Empire Center founder E.J. McMahon 
+        said the hit could be worse than the Great Recession of the late 2000s, when roughly 370,000 people lost their jobs in a 
+        more than two-year span.
+        <br><br>
+        <a href = "https://www.nydailynews.com/coronavirus/ny-coronavirus-state-unemployment-website-crashes-20200316-ccc6fqalgrf3ree3o5zvi54ite-story.html" class = "readmore"><b>READ MORE</b></a>
+    </div>
+    <br><br>
+    <div class = "extendTheEnd">
+        <a style = "border: 2px solid #2b2b2b; padding-right: 30px; padding-bottom: 5px;padding-left: 30px; padding-top: 5px; color: #2b2b2b">PAID FOR BY: MARNI FOR COUNCIL 2021</a>
+    </div>
+</body>
+

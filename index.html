@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Marni Halasa | City Council</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel= "stylesheet" href = "style.css">
+</head>
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    // When the event DOMContentLoaded occurs, it is safe to access the DOM
+
+        // When the user scrolls the page, execute myFunction 
+        window.addEventListener('scroll', myFunction);
+
+        // Get the navbar
+        var navbar = document.getElementById("navBar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop + (window.innerHeight/50);
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if(window.pageYOffset >= sticky) {
+                //navbar.classList.add("sticky");
+                navbar.style.position = "fixed";
+                navbar.style.top = "0px";
+                navbar.style.margin = "0px";
+                console.log("added sticky");
+            } else {
+                //navbar.classList.remove("sticky");
+                navbar.style.position = "relative";
+                navbar.style.top = "0px";
+                navbar.style.marginTop = "-5px";
+                console.log("removed sticky");
+            }
+        }
+    })
+    
+    function goAsk(){
+        window.scrollTo(0,0);
+
+        var askDonate = document.getElementById("askForDonations");
+        askDonate.style.visibility = "visible";
+        askDonate.style.webkitAnimation = "goAsk 2s";
+        askDonate.style.height = "450px";
+    }
+
+</script>
+<body>
+    <img id = "banner">
+    <div id = "askForDonations" style = "visibility: hidden; height: 0px;">
+        <div id = "leftcontainerD">
+            <h1>Our People Funded Campaign Needs Your Help</h1>
+            If you believe there needs to be major change to restore democracy at City Hall, come join us! 
+            We are a completely citizen-powered grassroots campaign with no money from real estate or special interests. 
+            As a real voice for ordinary people — who are too often voiceless.<br><br>
+
+            Qualifying for matching funds will give us an 8 to 1 match. So your $10 donation becomes $90.
+            Your $25 donation becomes $225. Your $100 becomes $900. And your $175 becomes $1,575, so every 
+            donation matters! Thank you!<br><br>
+
+            <h3>Can't Donate? <a href = "" style = "text-decoration: underline;">Become a volunteer!</a></h3>
+        </div>
+        <div id = "rightcontainerD">
+            <a href = "" class = "manyDonateButtons">DONATE $10</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">DONATE $25</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">DONATE $50</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">DONATE $100</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">NO, THANKS</a><br><br><br>
+        </div>
+    </div>
+    <div id = "navBar">
+        <a href = "index.html"><li class = "navLink">HOME</li></a>
+        <a href = "about.html"><li class = "navLink">ABOUT</li></a>
+        <a href = "press.html"><li class = "navLink">NEWS</li></a> <!-- BLOG AND PRESS-->
+        <a href = ""><li class = "navLink">ISSUES</li></a>
+        <a href = ""><li class = "navLink">TALK</li></a>
+        <button onclick="goAsk()" id = "donate"><b>DONATE</b></button>
+    </div>
+    <img id = "coverPhoto">
+    <div id = "Personal">
+        <div id = "leftcontainer">
+            <img src = "images/headshot.jpg" style = "width: 100%;">
+        </div>
+        <div id = "rightcontainer">
+            <h1>MARNI HALASA IS READY TO FIGHT FOR CHANGE, ARE YOU?</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nostrum alias reprehenderit 
+            quisquam magni temporibus aspernatur ullam ad iusto, recusandae repudiandae obcaecati assumenda 
+            repellat quos quidem doloremque, maiores at voluptas! Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit. Libero nostrum alias reprehenderit 
+            quisquam magni temporibus aspernatur ullam ad iusto, recusandae repudiandae obcaecati assumenda 
+            repellat quos quidem doloremque, maiores at voluptas!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nostrum alias reprehenderit 
+            quisquam magni temporibus aspernatur ullam ad iusto, recusandae repudiandae obcaecati assumenda 
+            repellat quos quidem doloremque, maiores at voluptas! Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit. Libero nostrum alias reprehenderit<br>
+            <a href = "" style = "padding-left: 20px; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; 
+            background-color: #490585; margin-top: 10px; float:right; margin-right: 50px">READ MORE</a>
+        </div>
+    </div>
+    <div class = "linkContainer">
+        <div id = "volunteer">
+            <h2>VOLUNTEER</h2><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nostrum alias reprehenderit 
+            quisquam magni temporibus aspernatur ullam ad iusto, recusandae repudiandae obcaecati assumenda 
+            repellat quos quidem doloremque, maiores at voluptas!
+            <br><br>
+            <div class = "button" style = "color: #f0f0f0;  margin-right: calc(50% - 60px);" href = "">VOLUNTEER</div>
+        </div>
+        <div id = "pleasedonate">
+            <h2>DONATE</h2><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nostrum alias reprehenderit 
+            quisquam magni temporibus aspernatur ullam ad iusto, recusandae repudiandae obcaecati assumenda 
+            repellat quos quidem doloremque, maiores at voluptas!
+            <br><br>
+            <div class = "button" style = "color: #f0f0f0; margin-right: calc(50% - 50px);">DONATE</div>
+        </div>
+        <div id = "newsletter">
+            <h2>NEWSLETTER</h2><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nostrum alias reprehenderit 
+            quisquam magni temporibus aspernatur ullam ad iusto, recusandae repudiandae obcaecati assumenda 
+            repellat quos quidem doloremque, maiores at voluptas!
+            <br><br>
+            <div class = "button" style = "color: #f0f0f0;  margin-right: calc(50% - 35px);">JOIN</div>
+        </div>
+    </div>
+    <div class = "extendTheEnd">
+        <a style = "border: 2px solid #f0f0f0; padding-right: 30px; padding-bottom: 5px;padding-left: 30px; padding-top: 5px;">PAID FOR BY: MARNI FOR COUNCIL 2021</a>
+    </div>
+</body>

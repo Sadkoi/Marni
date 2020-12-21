@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Marni Halasa | City Council</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel= "stylesheet" href = "style.css">
+</head>
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    // When the event DOMContentLoaded occurs, it is safe to access the DOM
+
+        // When the user scrolls the page, execute myFunction 
+        window.addEventListener('scroll', myFunction);
+
+        // Get the navbar
+        var navbar = document.getElementById("navBar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop + (window.innerHeight/50);
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if(window.pageYOffset >= sticky) {
+                //navbar.classList.add("sticky");
+                navbar.style.position = "fixed";
+                navbar.style.top = "0px";
+                navbar.style.margin = "0px";
+                console.log("added sticky");
+            } else {
+                //navbar.classList.remove("sticky");
+                navbar.style.position = "relative";
+                navbar.style.top = "0px";
+                navbar.style.marginTop = "-5px";
+                console.log("removed sticky");
+            }
+        }
+    })
+    
+    function goAsk(){
+        window.scrollTo(0,0);
+
+        var askDonate = document.getElementById("askForDonations");
+        askDonate.style.visibility = "visible";
+        askDonate.style.webkitAnimation = "goAsk 2s";
+        askDonate.style.height = "450px";
+    }
+
+</script>
+<body style = "background-color: #f0f0f0;">
+    <img id = "banner">
+    <div id = "askForDonations" style = "visibility: hidden; height: 0px;">
+        <div id = "leftcontainerD">
+            <h1>Our People Funded Campaign Needs Your Help</h1>
+            If you believe there needs to be major change to restore democracy at City Hall, come join us! 
+            We are a completely citizen-powered grassroots campaign with no money from real estate or special interests. 
+            As a real voice for ordinary people — who are too often voiceless.<br><br>
+
+            Qualifying for matching funds will give us an 8 to 1 match. So your $10 donation becomes $90.
+            Your $25 donation becomes $225. Your $100 becomes $900. And your $175 becomes $1,575, so every 
+            donation matters! Thank you!<br><br>
+
+            <h3>Can't Donate? <a href = "" style = "text-decoration: underline;">Become a volunteer!</a></h3>
+        </div>
+        <div id = "rightcontainerD">
+            <a href = "" class = "manyDonateButtons">DONATE $10</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">DONATE $25</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">DONATE $50</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">DONATE $100</a><br><br><br>
+            <a href = "" class = "manyDonateButtons">NO, THANKS</a><br><br><br>
+        </div>
+    </div>
+    <div id = "navBar" style = "margin-top: -5px;">
+        <a href = "index.html"><li class = "navLink">HOME</li></a>
+        <a href = "about.html"><li class = "navLink">ABOUT</li></a>
+        <a href = "press.html"><li class = "navLink">NEWS</li></a> <!-- BLOG AND PRESS-->
+        <a href = ""><li class = "navLink">ISSUES</li></a>
+        <a href = ""><li class = "navLink">TALK</li></a>
+        <button onclick="goAsk()" id = "donate"><b>DONATE</b></button>
+    </div>
+    <img src = "images/MarniCoffeeShop.jpg" style = "width: calc(100% - 1px);">
+    <div class = "aboutPage" style = "font-size: 18px; text-align: center;">
+        
+        <h1>IM RUNNING FOR CITY COUNCIL IN 2021 IN DISTRICT 3 AS A TRUE PROGRESSIVE DEMOCRAT</h1>
+        As the daughter of Jordanian and Phillipino immigrants, my focus has always been 
+        advocating for the less fortunate. I’m a community activist fighting to save tenants' homes,
+        a small business owner advocating to save our stores, a former lawyer adept at calling out corruption, and professional figure 
+        skating coach brightening the future of our children. Most of all, I’m a New Yorker committed to restoring democracy at City Hall.
+        <br><br>
+        As a part of a new generation of activists getting involved with electoral politics, I am not afraid 
+        to call out machine lawmakers for do-nothing policies that work against the communities they represent.
+        My advocacy has inspired tenants to organize, independent contractors to form collectives, and ordinary
+        people to get politically-engaged. I’m here to:
+        <br><br>
+        Champion Tenants Rights
+        <br><br>
+        Save Small Businesses & Jobs
+        <br><br> 
+        Rally for Independent Contractors’ Rights
+        <br><br>  
+        Refuse Real Estate and Special Interest Money
+        <br><br>  
+        My husband Peter Cecere and I were owners of Red Eye Coffee, which we were forced to close due to unaffordable rents. 
+        We lost our small business because we had no rights to negotiate fair lease terms, and sadly, this is not an isolated 
+        case. I’ve been fighting for the Jobs Survival Act, which gives all commercial tenants a right to a long term lease 
+        renewal, the right to equally negotiate fair lease terms and the right to an arbitration process if a mutual agreement 
+        cannot be reached. I’m fighting to stop the landlords from passing along their property taxes to their tenants. With 
+        your vote, we can hold landlords accountable.
+        <br><br>
+        Since Occupy Wall Street, I have been a known figure involved in political protests throughout NYC. 
+        I have protested at City Council Speaker Corey Johnson’s district office, confronting him for refusing 
+        to pass a bill that would save small businesses like mine. I make my voice heard, protesting against racism 
+        and police brutality-- and I am an avid proponent of election integrity, striving to ensure that residents 
+        in my district participate in our democracy.
+        <br><br>  
+        As a businesswoman, I also intend to reform inefficient agencies and cut fraud and waste while rebuilding revenue generators 
+        like our small businesses.  It's time taxpayers get a break and get rid of corrupt political machines and special interests. 
+        Join my fight to lower taxes!
+        <br><br><br>
+        <img src = "images/MarniRink.jpg" style = "width: 70%;">
+        <br><br>
+        <h1>ABOUT ME</h1>  
+        As a resident of Chelsea and Hell's Kitchen for the past 28 years, my unique background as a small business owner, 
+        community activist, figure skating coach and lawyer — professions outside of the political machine — make me the 
+        strongest candidate for City Council in 2021. I lead with the people’s best interests at heart, and will make immediate
+        changes at City Hall.
+        <br><br>  
+        As a small business owner, I started <i>Community Control of Land Use</i> 
+        to educate and organize small business owners, pushing for legislation that would give them rights to an affordable
+        and renewable lease. 
+        <br><br>  
+        As a figure skating coach at Chelsea Piers, I have spent 28 years teaching children the joy and discipline of figure 
+        skating. I educated parents on instilling life lessons, allowing their children to fully realize their dreams. I was 
+        also one of the primary organizers in a campaign to collectively organize figure skating coaches against being 
+        misclassified as employees, and the founder of NYCHA Kids Skate!--  a program to teach pro bono children living in public housing.
+        <br><br>
+        Whether I am teaching skating students, or fighting with small businesses for progressive legislation, I have always fought for my 
+        community. All of my experiences have shaped my drive to make all New York communities more just and equitable. I want to fight for 
+        a home and job for every New Yorker, and guarantee quality healthcare to all. I am ready to put power back in the hands of the 
+        people, and fight for my community in District 3.  
+        <br><br>
+        <img src = "images/mural.jpg" style = "width: 70%;">
+        <h1>ORDINARY PEOPLE CAN MAKE A DIFFERENCE IF THEIR VOICES ARE LOUD ENOUGH</h1>
+        In 2019, I fought alongside tenants living in NYCHA Fulton, Elliott Chelsea and Harborview Houses against RAD, 
+        a privatization scheme by developers to evict public housing residents — protesting in front of elected officials' homes. 
+        My efforts, alongside other activists, pushed Mayor Bill DeBlasio to create a Working Group for NYCHA residents in District 
+        3 — the only working group created in the city. I continue to fight for public housing by creating effective social media 
+        campaigns that expose corruption and negligence during the COVID-19 pandemic. 
+        <br><br>
+        <h2>SMALL BUSINESS ADVOCATE PUSHES SPEAKER JOHNSON TO SAVE SMALL BUSINESS AND GIVE AN HONEST PUBLIC HEARING</h2>
+        One of Marni’s significant accomplishments from running against Corey Johnson in 2017 was that he gave the Survival Act/SBJSA a 
+        public hearing a year later in October 2018. The day of the public hearing, Marni organized a press conference that morning to 
+        show the public hearing was a sham and rigged in favor of real estate interests. Speakers at Marni’s event — known activists 
+        (including Takeback NYC, Humanscale, Professor Tom Angotti and Naureen Akhter, policy advisor for Congresswoman Alexandria 
+        Ocasio-Cortez) — called for City Council and Speaker Johnson to move and pass the Survival Act, the only solution to the 
+        crisis of small business closings. As a small business owner pushed out by exorbitant rents, Marni continues to push Speaker 
+        Johnson and Mayor DeBlasio on this issue.
+        <br><br>
+        <h2>COUNCIL CHALLENGER PUSHES COREY JOHNSON TO STOP TAKING REAL ESTATE MONEY</h2>
+        Another accomplishment from Marni’s first campaign in 2017 was to examine and call out Corey Johnson’s cozy relationship to real 
+        estate and development special interests. Analyzing 168 individual donors, Marni’s campaign team found that 68% of his $485K in 
+        campaign contributions (as of September 2017) stemmed from donors directly linked to real estate, Wall Street, nightlife and 
+        corporate philanthropy — industries known for gentrifying of the district. After her relentless efforts to make such relationships
+        o the public via social media, the Speaker made the decision to stop taking real estate money a year and a half later. 
+        See the website: Corey Quinn for Mayor.com.
+        <br><br>
+        Outside of politics, Marni — a US Figure Skating Double Gold Medalist and 4-time Gay Games Gold Medalist in Ice Dance -- coaches 
+        the nationally-ranked bronze medalist skating team, the Sky Rink All Stars. The All Stars, consecutive US Figure Skating Showcase 
+        National Medalists from 2013 to 2019, are one of the most decorated teams in the nation. She also created NYCHA Kids Skate!, a 
+        pro-bono program to teach children from public housing how to skate.
+        <br><br>
+        <h2>A HISTORY OF PROTESTING INJUSTICE</h2>
+        Before her foray into local politics, Marni was known for creative protest, spreading progressive messages in the form of 
+        performance art in the mainstream media. Her protest group, Revolution Is Sexy, founded during Occupy Wall Street, utilizer 
+        her skills as a theatrical personality to raise awareness of often complicated financial issues to make digestible to the 
+        public. In addition to performance, Marni also organized protests, press conferences and helped groups liaison with reporters 
+        to cover issues like income inequality, universal healthcare and the racism of Donald Trump.
+        <br><br>
+        <h2>AN OBSERVER AND WRITER OF LOCAL POLITICS</h2>
+        Frequently asked to speak on the inner workings of local politics, Ms. Halasa can be often at rallies at City Hall, the 
+        Left Forum Conference and Midtown South Community Council.  Her populist political voice has been published in articles 
+        and op-eds for New York Daily News, The Villager, Metro New York, Chelsea Now, Westview News, 42st Magazine and The Clinton 
+        Chronicle. She was a former reporter and editor for the New York Law Journal and The Bond Buyer. 
+        <br><br>
+    </div>
+    <br><br>
+    <div class = "extendTheEnd">
+        <a style = "border: 2px solid #2b2b2b; padding-right: 30px; padding-bottom: 5px;padding-left: 30px; padding-top: 5px; color: #2b2b2b">PAID FOR BY: MARNI FOR COUNCIL 2021</a>
+    </div>
+</body>
